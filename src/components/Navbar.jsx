@@ -79,7 +79,7 @@ export default function Navbar() {
           Product
         </a>
         <a href="#about" className="navItem">
-          About
+          Tentang Kami
         </a>
       </div>
       <div className="navContact">
