@@ -203,12 +203,26 @@ function App() {
             <a href="#beranda" className="navItem">
               Beranda
             </a>
-            <a href="#produk" className="navItem">
+            <a href="#product" className="navItem">
               Produk
             </a>
             <a href="#about" className="navItem">
               Tentang Kami
             </a>
+          </div>
+          <div className="right">
+            <p>
+              Yosodadi, Kec. Metro Timur,
+              Kota Metro, Lampung 34124
+            </p>
+            <p>
+              082184846969
+            </p>
+            <p>
+              Senin sampai Jumat: 08.00–17.00
+              Sabtu: 08.00–14.00
+              Minggu: Tutup
+            </p>
           </div>
         </div>
       </div>
