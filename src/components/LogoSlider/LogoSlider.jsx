@@ -11,10 +11,9 @@ export default function LogoSlider() {
 
     // clone semua child sekali
     const children = [...track.children];
-    children.forEach(child => {
+    children.forEach((child) => {
       track.appendChild(child.cloneNode(true));
     });
-
   }, []);
 
   return (

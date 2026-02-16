@@ -24,7 +24,7 @@ export default function Navbar() {
         x: rect.left - parentRect.left,
         width: rect.width,
         duration: 1,
-        ease: "power3.out"
+        ease: "power3.out",
       });
 
       // ubah warna item yang aktif
@@ -33,13 +33,13 @@ export default function Navbar() {
           gsap.to(item, {
             color: "#ffffff",
             duration: 1,
-            ease: "power3.out"
+            ease: "power3.out",
           });
         } else {
           gsap.to(item, {
             color: "#000",
             duration: 1,
-            ease: "power3.out"
+            ease: "power3.out",
           });
         }
       });
@@ -53,7 +53,7 @@ export default function Navbar() {
         start: "top center",
         end: "bottom center",
         onEnter: () => moveBackground(item),
-        onEnterBack: () => moveBackground(item)
+        onEnterBack: () => moveBackground(item),
       });
 
       item.addEventListener("click", () => {
@@ -65,20 +65,27 @@ export default function Navbar() {
     if (items.length > 0) {
       moveBackground(items[0]);
     }
-
   }, []);
 
   return (
     <nav className="nav">
-      <NavLogo/>
+      <NavLogo />
       <div className="navWrapper" ref={navRef}>
         <div className="navBg" ref={bgRef}></div>
-        <a href="#beranda" className="navItem">Beranda</a>
-        <a href="#product" className="navItem">Product</a>
-        <a href="#about" className="navItem">About</a>
+        <a href="#beranda" className="navItem">
+          Beranda
+        </a>
+        <a href="#product" className="navItem">
+          Product
+        </a>
+        <a href="#about" className="navItem">
+          About
+        </a>
       </div>
       <div className="navContact">
-        <a href="" className="navContactLink">Hubungi Kami</a>
+        <a href="" className="navContactLink">
+          Hubungi Kami
+        </a>
       </div>
     </nav>
   );
