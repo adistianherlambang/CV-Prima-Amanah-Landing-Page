@@ -211,17 +211,10 @@ function App() {
             </a>
           </div>
           <div className="right">
+            <p>Yosodadi, Kec. Metro Timur, Kota Metro, Lampung 34124</p>
+            <p>082184846969</p>
             <p>
-              Yosodadi, Kec. Metro Timur,
-              Kota Metro, Lampung 34124
-            </p>
-            <p>
-              082184846969
-            </p>
-            <p>
-              Senin sampai Jumat: 08.00–17.00
-              Sabtu: 08.00–14.00
-              Minggu: Tutup
+              Senin sampai Jumat: 08.00–17.00 Sabtu: 08.00–14.00 Minggu: Tutup
             </p>
           </div>
         </div>
