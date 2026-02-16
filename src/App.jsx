@@ -10,10 +10,10 @@ import { NavLogo, FooterLogo } from "./components/Logo";
 import LogoSlider from "./components/LogoSlider/LogoSlider";
 
 //product
-import aice from "./data/aice.json"
-import campina from "./data/campina.json"
-import gracia from "./data/gracia.json"
-import korudo from "./data/korudo.json"
+import aice from "./data/aice.json";
+import campina from "./data/campina.json";
+import gracia from "./data/gracia.json";
+import korudo from "./data/korudo.json";
 
 gsap.registerPlugin(ScrollSmoother);
 
@@ -30,17 +30,12 @@ function App() {
   const productNav = ["Semua", "Campina", "Aice", "Korudo", "Gracia"];
   const [stateProductNav, setStateProductNav] = useState("Semua");
 
-  const product = [
-    ...aice,
-    ...campina,
-    ...gracia,
-    ...korudo,
-  ]
+  const product = [...aice, ...campina, ...gracia, ...korudo];
 
-  const [visible, setVisible] = useState(10)
+  const [visible, setVisible] = useState(10);
   const handleAddVisible = () => {
-    setVisible((prev) => prev + 20)
-  }
+    setVisible((prev) => prev + 20);
+  };
 
   return (
     <>
@@ -95,31 +90,42 @@ function App() {
               </div>
             </div>
             <div className="product">
-              {product.slice(0, visible).filter(item => stateProductNav === "Semua" || item.brand === stateProductNav).map((item, idx) => (
-                <div className="productCard" key={idx}>
-                  <img className="productImg" src={item.foto} alt={item.product} />
-                  <div className="productTop">
-                    <div>
-                      <p className="productTitle">{item.product}</p>
-                      <p className="productSmall">{item.brand}</p>
+              {product
+                .slice(0, visible)
+                .filter(
+                  (item) =>
+                    stateProductNav === "Semua" ||
+                    item.brand === stateProductNav,
+                )
+                .map((item, idx) => (
+                  <div className="productCard" key={idx}>
+                    <img
+                      className="productImg"
+                      src={item.foto}
+                      alt={item.product}
+                    />
+                    <div className="productTop">
+                      <div>
+                        <p className="productTitle">{item.product}</p>
+                        <p className="productSmall">{item.brand}</p>
+                      </div>
+                      <div>
+                        <p className="productSmall">Isi/dus</p>
+                        <p>{item.isi}</p>
+                      </div>
                     </div>
-                    <div>
-                      <p className="productSmall">Isi/dus</p>
-                      <p>{item.isi}</p>
+                    <div className="productBottom">
+                      <div>
+                        <p className="productSmall">Harga Ecer</p>
+                        <p>{item.ecer}</p>
+                      </div>
+                      <div>
+                        <p className="productSmall">Harga Modal</p>
+                        <p>{item.modal}</p>
+                      </div>
                     </div>
                   </div>
-                  <div className="productBottom">
-                    <div>
-                      <p className="productSmall">Harga Ecer</p>
-                      <p>{item.ecer}</p>
-                    </div>
-                    <div>
-                      <p className="productSmall">Harga Modal</p>
-                      <p>{item.modal}</p>
-                    </div>
-                  </div>
-                </div>
-              ))}
+                ))}
             </div>
           </div>
           {product.length > visible && (
