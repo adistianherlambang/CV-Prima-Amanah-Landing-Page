@@ -33,7 +33,7 @@
 .banner .desc {
   font-size: 1rem;
   text-align: center;
-  width: 40%;
+  max-width: 90%;
 }
 
 .productContainer {
@@ -77,7 +77,8 @@
   height: fit-content;
   border: solid #303030 1px;
   border-radius: 100px;
-  width: 566px;
+  width: 100%;
+  max-width: 566px;
 }
 
 .productNavContainer {
@@ -213,6 +214,7 @@
   width: fit-content;
   background-color: #303030;
   color: white;
+  margin-bottom: 1rem;
 }
 
 .aboutDesc {
@@ -267,9 +269,11 @@
 .center .navItem {
   font-size: 24px;
   text-decoration: none;
-  display: block;
+  display: inline-block;
   color: white;
   white-space: nowrap;
+  padding: 0;
+  margin: 0;
 }
 
 .footer .right {
@@ -382,6 +386,7 @@
 
   .aboutLeft {
     width: 100%;
+    gap: 2rem;
   }
 
   .aboutImg {
@@ -481,8 +486,9 @@
   .productSmall {
     font-size: 10px;
   }
-.aboutContainer {
-    width: 100%0%;
+
+  .aboutContainer {
+    width: 100%;
     gap: 40px;
     padding: 0 16px;
   }
@@ -507,6 +513,15 @@
 
   .aboutLeft {
     width: 100%;
+    gap: 1rem;
+  }
+
+  .aboutTitle {
+    font-size: 16px;
+  }
+
+  .aboutDesc {
+    font-size: 18px;
   }
 
   .aboutImg {
@@ -520,14 +535,14 @@
   .footer {
     width: 100%;
     margin: 0;
-    padding: 24px 16px;
-    gap: 24px;
+    padding: 32px 16px;
+    gap: 32px;
     flex-direction: column;
   }
 
   .footer .left {
     width: 100%;
-    gap: 16px;
+    gap: 32px;
   }
 
   .left .desc p {
@@ -536,15 +551,16 @@
 
   .footer .center {
     width: 100%;
-    gap: 0.5rem;
+    gap: 1rem;
   }
 
   .center .navItem {
-    font-size: 16px;
+    font-size: px;
   }
 
   .footer .right {
     width: 100%;
+    gap: 0.5rem;
     font-size: 14px;
   }
 }

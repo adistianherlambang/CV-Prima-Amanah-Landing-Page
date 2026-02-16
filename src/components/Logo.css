@@ -1,0 +1,26 @@
+.navLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navLogo img {
+  width: 12rem;
+}
+
+.footerLogo {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+
+
+@media (max-width: 767px) {
+  .navLogo img {
+    max-width: 8rem;
+  }
+
+  .footerLogo img {
+    max-width: 10rem;
+  }
+}

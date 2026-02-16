@@ -37,6 +37,19 @@ function App() {
     setVisible((prev) => prev + 20);
   };
 
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 768); // threshold mobile, bisa diubah
+    };
+
+    checkMobile(); // cek saat mount
+
+    window.addEventListener("resize", checkMobile); // update saat resize
+    return () => window.removeEventListener("resize", checkMobile); // cleanup
+  }, []);
+
   return (
     <>
       <Navbar />
@@ -184,13 +197,13 @@ function App() {
         </div>
         <div className="footer">
           <div className="left">
-            <FooterLogo />
+            {!isMobile && <FooterLogo />}
             <div className="desc">
-              <p style={{ fontSize: "24px" }}>
+              <p style={{ fontSize: "24px"}}>
                 Mitra Distribusi Produk Terpercaya dengan Jangkauan Wilayah yang
                 Luas
               </p>
-              <p>
+              <p style={{textAlign: "justify"}}>
                 Berpengalaman dalam distribusi dan pemasaran produk ice cream
                 serta sembako dengan cakupan Lampung Tengah, Lampung Timur,
                 Metro, Bandar Lampung, Pesawaran, dan Kalianda sejak 2020.
@@ -215,6 +228,7 @@ function App() {
               Senin sampai Jumat: 08.00–17.00 Sabtu: 08.00–14.00 Minggu: Tutup
             </p>
           </div>
+          <div style={{display: "flex", justifyContent: "center", alignItems: "center", marginTop: "2rem"}}>{isMobile && <FooterLogo />}</div>
         </div>
       </div>
     </>
