@@ -136,15 +136,12 @@ function App() {
         </div>
         <div id="about" className="aboutContainer">
           <p className="title">
-            Tentang{" "}
-            <span className="highlight">
-              Kami
+            <span className="titleWrapper">
+              Tentang <span className="blue">Kami</span>
+
               <svg
-                className="underlineSvg"
-                width="242"
-                height="42"
+                className="bgSvg"
                 viewBox="0 0 242 42"
-                fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
@@ -154,6 +151,37 @@ function App() {
               </svg>
             </span>
           </p>
+          <p className="desc">CV. Prima Amanah adalah perusahaan yang berdiri pada tanggal 05 februari 2020, cv prima amanah bergerak di bidang distribusi food (produk ice cream & sembako) dan pemasaran CV. Prima Amanah telah mencakupp di wilayah Lamping Tengah, Lampung Timur, Metro, Bandar Lampung, Pesawaran, dan Kalianda</p>
+          <div className="aboutWrapper">
+            <div className="about" style={{backgroundColor: "#FED6F0"}}>
+              <div className="aboutLeft">
+                <div className="aboutTitle"><p>Visi Perusahaan</p></div>
+                <p className="aboutDesc" style={{color: "#303030"}}>Menjadi distributor yang mampu mendistribusikan produk mitra bisnis secara optimal dan tepat.</p>
+              </div>
+              <img className="aboutImg" src="/photo/left.svg" alt="kurir" />
+            </div>
+            <div className="about" style={{backgroundColor: "#5996FD"}}>
+              <div className="aboutLeft">
+                <div className="aboutTitle"><p>Visi Perusahaan</p></div>
+                <p className="aboutDesc" style={{color: "white"}}>Menjadi mitra pelanggan terpercaya dalam pengadaan produk dan solusi distribusi unggul.</p>
+              </div>
+              <img className="aboutImg" src="/photo/right.svg" alt="kurir" />
+            </div>
+          </div>
+        </div>
+        <div className="footer">
+          <div className="left">
+            <FooterLogo/>
+            <div className="desc">
+              <p style={{fontSize: "24px"}}>Mitra Distribusi Produk Terpercaya dengan Jangkauan Wilayah yang Luas</p>
+              <p>Berpengalaman dalam distribusi dan pemasaran produk ice cream serta sembako dengan cakupan Lampung Tengah, Lampung Timur, Metro, Bandar Lampung, Pesawaran, dan Kalianda sejak 2020.</p>
+            </div>
+          </div>
+          <div className="center">
+            <a href="#beranda" className="navItem">Beranda</a>
+            <a href="#produk" className="navItem">Produk</a>
+            <a href="#about" className="navItem">Tentang Kami</a>
+          </div>
         </div>
       </div>
     </>
