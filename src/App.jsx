@@ -49,9 +49,7 @@ function App() {
           </p>
           <p className="desc">
             Kami menyediakan dan mendistribusikan berbagai produk es krim
-            berkualitas tinggi dengan
-            <br />
-            sistem distribusi yang andal, tepat waktu, dan menjangkau berbagai
+            berkualitas tinggi dengan sistem distribusi yang andal, tepat waktu, dan menjangkau berbagai
             sektor usaha.
           </p>
         </div>
@@ -74,7 +72,7 @@ function App() {
                       fill="#5996FD"
                     />
                   </svg>
-                  <p>Lihat Semua</p>
+                  <p>Cari Produk</p>
                 </div>
               </div>
               <div className="productNavContainer">

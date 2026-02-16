@@ -10,8 +10,22 @@ gsap.registerPlugin(ScrollTrigger);
 export default function Navbar() {
   const navRef = useRef(null);
   const bgRef = useRef(null);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
 
   useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  useEffect(() => {
+    // Hanya jalankan GSAP jika bukan mobile
+    if (isMobile) return;
+
     const nav = navRef.current;
     const bg = bgRef.current;
     const items = nav.querySelectorAll(".navItem");
@@ -65,11 +79,17 @@ export default function Navbar() {
     if (items.length > 0) {
       moveBackground(items[0]);
     }
-  }, []);
+  }, [isMobile]);
+
+  const handleMenuItemClick = () => {
+    setIsMenuOpen(false);
+  };
 
   return (
     <nav className="nav">
       <NavLogo />
+      
+      {/* Desktop Navigation */}
       <div className="navWrapper" ref={navRef}>
         <div className="navBg" ref={bgRef}></div>
         <a href="#beranda" className="navItem">
@@ -82,6 +102,37 @@ export default function Navbar() {
           Tentang Kami
         </a>
       </div>
+
+      {/* Mobile Hamburger Menu */}
+      <button 
+        className="navHamburger"
+        onClick={() => setIsMenuOpen(!isMenuOpen)}
+        aria-label="Toggle menu"
+      >
+        <span className={`hamburgerLine ${isMenuOpen ? "open" : ""}`}></span>
+        <span className={`hamburgerLine ${isMenuOpen ? "open" : ""}`}></span>
+        <span className={`hamburgerLine ${isMenuOpen ? "open" : ""}`}></span>
+      </button>
+
+      {/* Mobile Menu */}
+      {isMenuOpen && (
+        <div className="navMobileMenu">
+          <a href="#beranda" className="navMobileItem" onClick={handleMenuItemClick}>
+            Beranda
+          </a>
+          <a href="#product" className="navMobileItem" onClick={handleMenuItemClick}>
+            Product
+          </a>
+          <a href="#about" className="navMobileItem" onClick={handleMenuItemClick}>
+            Tentang Kami
+          </a>
+          <a href="" className="navMobileItem navMobileContact" onClick={handleMenuItemClick}>
+            Hubungi Kami
+          </a>
+        </div>
+      )}
+
+      {/* Desktop Contact Button */}
       <div className="navContact">
         <a href="" className="navContactLink">
           Hubungi Kami

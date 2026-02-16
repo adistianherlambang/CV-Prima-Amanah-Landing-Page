@@ -1,6 +1,6 @@
 .nav {
   background-color: white;
-  z-index: 10;
+  z-index: 20;
   position: fixed;
   top: 1rem;
   left: 2rem;
@@ -24,6 +24,8 @@
   text-decoration: none;
   color: #303030;
   z-index: 2;
+  font-size: 1rem;
+  white-space: nowrap;
 }
 
 .navBg {
@@ -46,4 +48,177 @@
 .navContactLink {
   color: white;
   text-decoration: none;
+  font-size: 1rem;
+  white-space: nowrap;
+}
+
+/* Hamburger Menu */
+.navHamburger {
+  margin-right: 0.5rem;
+  display: none;
+  flex-direction: column;
+  background: none;
+  border: none;
+  cursor: pointer;
+  gap: 6px;
+  z-index: 21;
+  padding: 0;
+}
+
+.hamburgerLine {
+  width: 24px;
+  height: 2.5px;
+  background-color: #303030;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.hamburgerLine.open:nth-child(1) {
+  transform: rotate(45deg) translate(10px, 10px);
+}
+
+.hamburgerLine.open:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburgerLine.open:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -7px);
+}
+
+/* Mobile Menu */
+.navMobileMenu {
+  display: none;
+  position: absolute;
+  top: 120%;
+  left: -1rem;
+  right: -1rem;
+  background-color: white;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+  border-radius: 0 0 1.5rem 1.5rem;
+  z-index: 10;
+  width: calc(100vw - 2rem);
+}
+
+.navMobileItem {
+  text-decoration: none;
+  color: #303030;
+  padding: 0.75rem 1rem;
+  font-size: 0.95rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  display: block;
+}
+
+.navMobileItem:hover {
+  background-color: #5996fd;
+  color: white;
+}
+
+.navMobileContact {
+  background-color: #5996fd;
+  color: white;
+  text-align: center;
+  font-weight: 500;
+}
+
+
+/* Desktop ≥ 1024px */
+@media (min-width: 1024px) {
+  .nav {
+    top: 1rem;
+    left: 2rem;
+    right: 2rem;
+    padding: 1rem;
+  }
+
+  .navItem {
+    padding: 0.5rem 1.2rem;
+    font-size: 1rem;
+  }
+
+  .navContact {
+    padding: 8px 1rem;
+  }
+
+  .navContactLink {
+    font-size: 1rem;
+  }
+
+  .navWrapper {
+    gap: 1rem;
+    display: flex;
+  }
+
+  .navHamburger {
+    display: none;
+  }
+
+  .navMobileMenu {
+    display: none;
+  }
+}
+
+/* Tablet 768px–1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .nav {
+    top: 0.8rem;
+    left: 1.5rem;
+    right: 1.5rem;
+    padding: 0.8rem;
+  }
+
+  .navItem {
+    padding: 0.4rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .navContact {
+    padding: 6px 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .navContactLink {
+    font-size: 0.9rem;
+  }
+
+  .navWrapper {
+    gap: 0.8rem;
+    display: flex;
+  }
+
+  .navHamburger {
+    display: none;
+  }
+
+  .navMobileMenu {
+    display: none;
+  }
+}
+
+/* Mobile < 768px */
+@media (max-width: 767px) {
+  .nav {
+    top: 0.5rem;
+    left: 1rem;
+    right: 1rem;
+    padding: 0.6rem;
+  }
+
+  .navWrapper {
+    display: none;
+  }
+
+  .navContact {
+    display: none;
+  }
+
+  .navHamburger {
+    display: flex;
+  }
+
+  .navMobileMenu {
+    display: flex;
+  }
 }
