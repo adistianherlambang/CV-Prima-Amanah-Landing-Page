@@ -9,20 +9,38 @@ import Navbar from "./components/Navbar";
 import { NavLogo, FooterLogo } from "./components/Logo";
 import LogoSlider from "./components/LogoSlider/LogoSlider";
 
+//product
+import aice from "./data/aice.json"
+import campina from "./data/campina.json"
+import gracia from "./data/gracia.json"
+import korudo from "./data/korudo.json"
+
 gsap.registerPlugin(ScrollSmoother);
 
 function App() {
-  useEffect(() => {
-    ScrollSmoother.create({
-      wrapper: "#smooth-wrapper",
-      content: "#smooth-content",
-      smooth: 1.2,
-      effects: true,
-    });
-  }, []);
+  // useEffect(() => {
+  //   ScrollSmoother.create({
+  //     wrapper: "#smooth-wrapper",
+  //     content: "#smooth-content",
+  //     smooth: 1.2,
+  //     effects: true,
+  //   });
+  // }, []);
 
-  const product = ["Semua", "Campina", "Aice", "Korudo", "Gracia"];
-  const [productNav, setProductNav] = useState("Semua");
+  const productNav = ["Semua", "Campina", "Aice", "Korudo", "Gracia"];
+  const [stateProductNav, setStateProductNav] = useState("Semua");
+
+  const product = [
+    ...aice,
+    ...campina,
+    ...gracia,
+    ...korudo,
+  ]
+
+  const [visible, setVisible] = useState(10)
+  const handleAddVisible = () => {
+    setVisible((prev) => prev + 20)
+  }
 
   return (
     <>
@@ -65,10 +83,10 @@ function App() {
                 </div>
               </div>
               <div className="productNavContainer">
-                {product.map((item, idx) => (
+                {productNav.map((item, idx) => (
                   <div
-                    className={`productNav ${item === productNav ? "active" : ""}`}
-                    onClick={() => setProductNav(item)}
+                    className={`productNav ${item === stateProductNav ? "active" : ""}`}
+                    onClick={() => setStateProductNav(item)}
                     key={idx}
                   >
                     <p>{item}</p>
@@ -76,7 +94,60 @@ function App() {
                 ))}
               </div>
             </div>
+            <div className="product">
+              {product.slice(0, visible).filter(item => stateProductNav === "Semua" || item.brand === stateProductNav).map((item, idx) => (
+                <div className="productCard" key={idx}>
+                  <img className="productImg" src={item.foto} alt={item.product} />
+                  <div className="productTop">
+                    <div>
+                      <p className="productTitle">{item.product}</p>
+                      <p className="productSmall">{item.brand}</p>
+                    </div>
+                    <div>
+                      <p className="productSmall">Isi/dus</p>
+                      <p>{item.isi}</p>
+                    </div>
+                  </div>
+                  <div className="productBottom">
+                    <div>
+                      <p className="productSmall">Harga Ecer</p>
+                      <p>{item.ecer}</p>
+                    </div>
+                    <div>
+                      <p className="productSmall">Harga Modal</p>
+                      <p>{item.modal}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
+          {product.length > visible && (
+            <div onClick={handleAddVisible} className="buttonContainer">
+              <p>Lihat Lebih Banyak</p>
+            </div>
+          )}
+        </div>
+        <div id="about" className="aboutContainer">
+          <p className="title">
+            Tentang{" "}
+            <span className="highlight">
+              Kami
+              <svg
+                className="underlineSvg"
+                width="242"
+                height="42"
+                viewBox="0 0 242 42"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M-2.33084e-05 41.8815C3.2932 39.5985 6.72108 37.5884 10.2837 35.6935C75.6522 3.7836 151.493 4.74638 220.22 20.722C224.038 21.6254 227.848 22.5814 231.716 23.6056C233.768 24.1496 235.926 23.8441 237.724 22.7161C239.522 21.5905 240.812 19.7347 241.303 17.5971C241.793 15.4595 241.441 13.2268 240.314 11.4301C239.187 9.63119 237.378 8.41562 235.294 8.01074C231.226 7.21413 227.222 6.48934 223.215 5.82001C151.085 -6.01258 73.3978 -1.46434 9.88541 34.9997C6.43468 37.1377 3.13441 39.3841 -2.33084e-05 41.8815Z"
+                  fill="#FED6F0"
+                />
+              </svg>
+            </span>
+          </p>
         </div>
       </div>
     </>
