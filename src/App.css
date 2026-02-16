@@ -14,3 +14,7 @@
   height: 300px;
   background: linear-gradient(to bottom, #FED6F0, #FFFFFF);
 }
+
+.banner .span {
+  font-family: "Lux";
+}

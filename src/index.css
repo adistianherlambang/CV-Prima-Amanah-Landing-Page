@@ -16,7 +16,7 @@
 
 @font-face {
   font-family: "Lux";
-  src: url("/font/lux.ttf") format("ttf");
+  src: url("/font/lux.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;

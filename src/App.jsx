@@ -1,32 +1,36 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import Navbar from './components/Navbar'
+import { gsap } from "gsap";
+import { ScrollSmoother } from "gsap/ScrollSmoother";
 
+import Navbar from './components/Navbar'
 import {NavLogo, FooterLogo} from "./components/Logo"
 
+gsap.registerPlugin(ScrollSmoother);
+
 function App() {
-  const [count, setCount] = useState(0)
+
+
+  useEffect(() => {
+    ScrollSmoother.create({
+      wrapper: "#smooth-wrapper",
+      content: "#smooth-content",
+      smooth: 1.2,
+      effects: true
+    });
+  }, []);
 
   return (
     <>
-
     <Navbar/>
-    <div className='banner'>
-
+    <div id='beranda' className='banner'>
+      <p>
+        Distributor Produk
+        <br/><span className='span'>Es Krim</span> Berkualitas
+      </p>
     </div>
-    <section id="beranda" style={{ height: "100vh", paddingTop: "100px" }}>
-        Beranda
-      </section>
-
-      <section id="product" style={{ height: "100vh" }}>
-        Product
-      </section>
-
-      <section id="about" style={{ height: "100vh" }}>
-        About
-      </section>
     </>
   )
 }

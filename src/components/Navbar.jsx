@@ -11,8 +11,6 @@ export default function Navbar() {
   const navRef = useRef(null);
   const bgRef = useRef(null);
 
-  const [tes, setTest] = useState("")
-
   useEffect(() => {
     const nav = navRef.current;
     const bg = bgRef.current;
@@ -29,7 +27,7 @@ export default function Navbar() {
         ease: "power3.out"
       });
 
-      // Ubah warna nav-item menjadi white untuk item yang aktif
+      // ubah warna item yang aktif
       items.forEach((item) => {
         if (item === target) {
           gsap.to(item, {
@@ -63,7 +61,7 @@ export default function Navbar() {
       });
     });
 
-    // set default ke item pertama
+    //set default bg kalo items ada
     if (items.length > 0) {
       moveBackground(items[0]);
     }
@@ -80,8 +78,7 @@ export default function Navbar() {
         <a href="#about" className="navItem">About</a>
       </div>
       <div className="navContact">
-        <a href="" className="navItem">Hubungi Kami</a>
-        <p>{tes}</p>
+        <a href="" className="navContactLink">Hubungi Kami</a>
       </div>
     </nav>
   );
