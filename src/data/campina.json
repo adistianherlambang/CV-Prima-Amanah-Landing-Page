@@ -1,10 +1,242 @@
 [
   {
-    "product": "Campina 1",
+    "product": "Petit Choco Mix",
     "brand": "Campina",
-    "ecer": "2500",
-    "modal": "120000",
+    "ecer": "3000",
+    "modal": "145000",
     "isi": "60",
-    "foto": "asset.jpg"
+    "foto": "/product/campina/Asset 78.jpg"
+  },
+  {
+    "product": "Petit Grape",
+    "brand": "Campina",
+    "ecer": "3000",
+    "modal": "145000",
+    "isi": "60",
+    "foto": "/product/campina/Asset 77.jpg"
+  },
+  {
+    "product": "Petit Milky Crunch",
+    "brand": "Campina",
+    "ecer": "3000",
+    "modal": "92000",
+    "isi": "36",
+    "foto": "/product/campina/Asset 76.jpg"
+  },
+  {
+    "product": "Fantasy Susu Coklat",
+    "brand": "Campina",
+    "ecer": "3000",
+    "modal": "92000",
+    "isi": "36",
+    "foto": "/product/campina/Asset 75.jpg"
+  },
+  {
+    "product": "Fantasy Strawberry",
+    "brand": "Campina",
+    "ecer": "3000",
+    "modal": "92000",
+    "isi": "36",
+    "foto": "/product/campina/Asset 74.jpg"
+  },
+  {
+    "product": "Fantasy Anggur",
+    "brand": "Campina",
+    "ecer": "3000",
+    "modal": "92000",
+    "isi": "36",
+    "foto": "/product/campina/Asset 73.jpg"
+  },
+  {
+    "product": "My Cup Choco Strawberry",
+    "brand": "Campina",
+    "ecer": "4000",
+    "modal": "125000",
+    "isi": "36",
+    "foto": "/product/campina/Asset 72.jpg"
+  },
+  {
+    "product": "Happy Cow Tutty Fruty",
+    "brand": "Campina",
+    "ecer": "4500",
+    "modal": "130000",
+    "isi": "36",
+    "foto": "/product/campina/Asset 71.jpg"
+  },
+  {
+    "product": "Hula Hula Kacang Hijau",
+    "brand": "Campina",
+    "ecer": "5500",
+    "modal": "220000",
+    "isi": "46",
+    "foto": "/product/campina/Asset 70.jpg"
+  },
+  {
+    "product": "Hula Hula Tape Ketan",
+    "brand": "Campina",
+    "ecer": "5500",
+    "modal": "220000",
+    "isi": "46",
+    "foto": "/product/campina/Asset 69.jpg"
+  },
+  {
+    "product": "Hula Hula Taro",
+    "brand": "Campina",
+    "ecer": "5500",
+    "modal": "220000",
+    "isi": "46",
+    "foto": "/product/campina/Asset 68.jpg"
+  },
+  {
+    "product": "Hula Hula Alpukat",
+    "brand": "Campina",
+    "ecer": "5500",
+    "modal": "220000",
+    "isi": "46",
+    "foto": "/product/campina/Asset 67.jpg"
+  },
+  {
+    "product": "Olympia Choco Fudge",
+    "brand": "Campina",
+    "ecer": "6500",
+    "modal": "145000",
+    "isi": "26",
+    "foto": "/product/campina/Asset 66.jpg"
+  },
+  {
+    "product": "Spongebob Cup",
+    "brand": "Campina",
+    "ecer": "6500",
+    "modal": "145000",
+    "isi": "26",
+    "foto": "/product/campina/Asset 65.jpg"
+  },
+  {
+    "product": "Spongebob Stick",
+    "brand": "Campina",
+    "ecer": "6000",
+    "modal": "125000",
+    "isi": "24",
+    "foto": "/product/campina/Asset 64.jpg"
+  },
+  {
+    "product": "Corneto Midi Choco Brownie",
+    "brand": "Campina",
+    "ecer": "7000",
+    "modal": "127000",
+    "isi": "22",
+    "foto": "/product/campina/Asset 63.jpg"
+  },
+  {
+    "product": "Corneto Midi Strawberry",
+    "brand": "Campina",
+    "ecer": "7000",
+    "modal": "127000",
+    "isi": "22",
+    "foto": "/product/campina/Asset 62.jpg"
+  },
+  {
+    "product": "Cornetto Choco Passion",
+    "brand": "Campina",
+    "ecer": "12000",
+    "modal": "18",
+    "isi": "175000",
+    "foto": "/product/campina/Asset 61jpg"
+  },
+  {
+    "product": "Spiderman",
+    "brand": "Campina",
+    "ecer": "6000",
+    "modal": "104000",
+    "isi": "20",
+    "foto": "/product/campina/Asset 60.jpg"
+  },
+  {
+    "product": "Patric Stick",
+    "brand": "Campina",
+    "ecer": "6000",
+    "modal": "104000",
+    "isi": "20",
+    "foto": "/product/campina/Asset 59.jpg"
+  },
+  {
+    "product": "Tropicana Choco Vanilla",
+    "brand": "Campina",
+    "ecer": "6500",
+    "modal": "168000",
+    "isi": "30",
+    "foto": "/product/campina/Asset 58.jpg"
+  },
+  {
+    "product": "Tropicana Double Choco",
+    "brand": "Campina",
+    "ecer": "6500",
+    "modal": "168000",
+    "isi": "30",
+    "foto": "/product/campina/Asset 57.jpg"
+  },
+  {
+    "product": "Tropicana Krez",
+    "brand": "Campina",
+    "ecer": "7000",
+    "modal": "149000",
+    "isi": "24",
+    "foto": "/product/campina/Asset 56.jpg"
+  },
+  {
+    "product": "Sundae",
+    "brand": "Campina",
+    "ecer": "10000",
+    "modal": "135000",
+    "isi": "16",
+    "foto": "/product/campina/Asset 55.jpg"
+  },
+  {
+    "product": "Cashew Nut",
+    "brand": "Campina",
+    "ecer": "12000",
+    "modal": "152000",
+    "isi": "16",
+    "foto": "/product/campina/Asset 54.jpg"
+  },
+  {
+    "product": "Fruitzy Apple 90ml",
+    "brand": "Campina",
+    "ecer": "6000",
+    "modal": "175000",
+    "isi": "36",
+    "foto": "/product/campina/Asset 53.jpg"
+  },
+  {
+    "product": "Marvel Cup 80ml",
+    "brand": "Campina",
+    "ecer": "6500",
+    "modal": "145000",
+    "isi": "26",
+    "foto": "/product/campina/Asset 52.jpg"
+  },
+  {
+    "product": "Strawberry Lime",
+    "brand": "Campina",
+    "ecer": "8000",
+    "modal": "196000",
+    "isi": "28",
+    "foto": "/product/campina/Asset 51.jpg"
+  },
+  {
+    "product": "Concerto Iconic",
+    "brand": "Campina",
+    "ecer": "8000",
+    "modal": "154000",
+    "isi": "22",
+    "foto": "/product/campina/Asset 50.jpg"
+  },
+  {
+    "product": "Heart",
+    "brand": "Campina",
+    "ecer": "6500",
+    "modal": "100000",
+    "isi": "18",
+    "foto": "/product/campina/Asset 49.jpg"
   }
 ]
