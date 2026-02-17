@@ -244,6 +244,7 @@
   display: flex;
   gap: 64px;
   margin: 0 64px 32px 64px;
+  border-radius: 1rem;
 }
 
 .footer .left {
@@ -538,6 +539,7 @@
     padding: 32px 16px;
     gap: 32px;
     flex-direction: column;
+    border-radius: 0;
   }
 
   .footer .left {
