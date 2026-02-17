@@ -1,10 +1,194 @@
 [
   {
-    "product": "Korudo 1",
+    "product": "Miss You",
     "brand": "Korudo",
     "ecer": "2500",
     "modal": "120000",
     "isi": "60",
     "foto": "/product/korudo/Asset 48.jpg"
+  },
+  {
+    "product": "Jerook",
+    "brand": "Korudo",
+    "ecer": "2500",
+    "modal": "99500",
+    "isi": "50",
+    "foto": "/product/korudo/Asset 47.jpg"
+  },
+  {
+    "product": "Choco Vanilla",
+    "brand": "Korudo",
+    "ecer": "2500",
+    "modal": "60",
+    "isi": "120000",
+    "foto": "/product/korudo/Asset 46.jpg"
+  },
+  {
+    "product": "Mung Mung",
+    "brand": "Korudo",
+    "ecer": "2500",
+    "modal": "120000",
+    "isi": "60",
+    "foto": "/product/korudo/Asset 45.jpg"
+  },
+  {
+    "product": "Snow Flower",
+    "brand": "Korudo",
+    "ecer": "2500",
+    "modal": "120000",
+    "isi": "60",
+    "foto": "/product/korudo/Asset 44.jpg"
+  },
+  {
+    "product": "Big Manggoo",
+    "brand": "Korudo",
+    "ecer": "2500",
+    "modal": "120000",
+    "isi": "60",
+    "foto": "/product/korudo/Asset 43.jpg"
+  },
+  {
+    "product": "Little Melon",
+    "brand": "Korudo",
+    "ecer": "2500",
+    "modal": "120000",
+    "isi": "60",
+    "foto": "/product/korudo/Asset 42.jpg"
+  },
+  {
+    "product": "Blueberry Ice",
+    "brand": "Korudo",
+    "ecer": "2500",
+    "modal": "120000",
+    "isi": "60",
+    "foto": "/product/korudo/Asset 41.jpg"
+  },
+  {
+    "product": "Rainbow Frost",
+    "brand": "Korudo",
+    "ecer": "2500",
+    "modal": "99500",
+    "isi": "50",
+    "foto": "/product/korudo/Asset 40.jpg"
+  },
+  {
+    "product": "Totela",
+    "brand": "Korudo",
+    "ecer": "3000",
+    "modal": "104000",
+    "isi": "40",
+    "foto": "/product/korudo/Asset 39.jpg"
+  },
+  {
+    "product": "Ter Serah",
+    "brand": "Korudo",
+    "ecer": "3000",
+    "modal": "104000",
+    "isi": "40",
+    "foto": "/product/korudo/Asset 38.jpg"
+  },
+  {
+    "product": "Golden Corn",
+    "brand": "Korudo",
+    "ecer": "3000",
+    "modal": "104000",
+    "isi": "40",
+    "foto": "/product/korudo/Asset 37.jpg"
+  },
+  {
+    "product": "Chocolate Corn",
+    "brand": "Korudo",
+    "ecer": "3000",
+    "modal": "104000",
+    "isi": "40",
+    "foto": "/product/korudo/Asset 36.jpg"
+  },
+  {
+    "product": "Rockie",
+    "brand": "Korudo",
+    "ecer": "5000",
+    "modal": "107000",
+    "isi": "24",
+    "foto": "/product/korudo/Asset 35.jpg"
+  },
+  {
+    "product": "Soo Me",
+    "brand": "Korudo",
+    "ecer": "5000",
+    "modal": "107000",
+    "isi": "24",
+    "foto": "/product/korudo/Asset 34.jpg"
+  },
+  {
+    "product": "Happy Coffee",
+    "brand": "Korudo",
+    "ecer": "5000",
+    "modal": "107000",
+    "isi": "24",
+    "foto": "/product/korudo/Asset 33.jpg"
+  },
+  {
+    "product": "Chocolate Susu",
+    "brand": "Korudo",
+    "ecer": "5000",
+    "modal": "107000",
+    "isi": "24",
+    "foto": "/product/korudo/Asset 32.jpg"
+  },
+  {
+    "product": "Microcone",
+    "brand": "Korudo",
+    "ecer": "6000",
+    "modal": "115000",
+    "isi": "24",
+    "foto": "/product/korudo/Asset 31.jpg"
+  },
+  {
+    "product": "Hello Pinky",
+    "brand": "Korudo",
+    "ecer": "2500",
+    "modal": "120000",
+    "isi": "60",
+    "foto": "/product/korudo/Asset 30.jpg"
+  },
+  {
+    "product": "Chocolate Milk",
+    "brand": "Korudo",
+    "ecer": "2500",
+    "modal": "99500",
+    "isi": "50",
+    "foto": "/product/korudo/Asset 29.jpg"
+  },
+  {
+    "product": "Paparila",
+    "brand": "Korudo",
+    "ecer": "3000",
+    "modal": "120000",
+    "isi": "50",
+    "foto": "/product/korudo/Asset 28.jpg"
+  },
+  {
+    "product": "Froots Puncg",
+    "brand": "Korudo",
+    "ecer": "3000",
+    "modal": "120000",
+    "isi": "50",
+    "foto": "/product/korudo/Asset 27.jpg"
+  },
+  {
+    "product": "Choco Fully",
+    "brand": "Korudo",
+    "ecer": "2500",
+    "modal": "120000",
+    "isi": "60",
+    "foto": "/product/korudo/Asset 26.jpg"
+  },
+  {
+    "product": "King Durian",
+    "brand": "Korudo",
+    "ecer": "2500",
+    "modal": "120000",
+    "isi": "60",
+    "foto": "/product/korudo/Asset 25.jpg"
   }
 ]
