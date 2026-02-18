@@ -141,6 +141,9 @@ function App() {
           </div>
           {product.length > visible && (
             <div onClick={handleAddVisible} className="buttonContainer">
+              <svg width="17" height="10" viewBox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.6823 0.730957L8.18231 7.73096L0.682312 0.730956" stroke="black" stroke-width="2"/>
+              </svg>
               <p>Lihat Lebih Banyak</p>
             </div>
           )}

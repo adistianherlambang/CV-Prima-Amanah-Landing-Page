@@ -111,9 +111,6 @@
   color: white;
 }
 
-/* .product {
-} */
-
 .product {
   display: grid;
   gap: 1.5rem;
@@ -126,6 +123,11 @@
   gap: 1rem;
   background-color: #f2f5fa;
   border-radius: 1rem;
+  transition: 300ms ease;
+}
+
+.productCard:hover {
+  background-color: #e4eaf1;
 }
 
 .productImg {
@@ -280,6 +282,23 @@
 .footer .right {
   display: flex;
   flex-direction: column;
+  gap: 1rem;
+}
+
+.buttonContainer {
+  background-color: #F2F5FA;
+  padding: 0.5rem 1rem;
+  border-radius: 100px;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: ease 300ms;
+}
+
+.buttonContainer:hover {
+  background-color: #e4eaf1;
   gap: 1rem;
 }
 
