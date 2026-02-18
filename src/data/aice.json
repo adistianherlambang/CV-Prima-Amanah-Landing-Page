@@ -1,10 +1,170 @@
 [
   {
-    "product": "Aice 1",
+    "product": "Miki Miki Vanilla",
+    "brand": "Aice",
+    "ecer": "2000",
+    "modal": "105000",
+    "isi": "60",
+    "foto": "/product/aice/Asset 102.jpg"
+  },
+  {
+    "product": "Bingo Chocolate Stick",
     "brand": "Aice",
     "ecer": "2500",
-    "modal": "120000",
-    "isi": "60",
-    "foto": "asset.jpg"
+    "modal": "110000",
+    "isi": "50",
+    "foto": "/product/aice/Asset 101.jpg"
+  },
+  {
+    "product": "Milk Melon",
+    "brand": "Aice",
+    "ecer": "3000",
+    "modal": "108000",
+    "isi": "40",
+    "foto": "/product/aice/Asset 100.jpg"
+  },
+  {
+    "product": "Two Colours",
+    "brand": "Aice",
+    "ecer": "3000",
+    "modal": "105000",
+    "isi": "40",
+    "foto": "/product/aice/Asset 99.jpg"
+  },
+  {
+    "product": "Mochi Klepon",
+    "brand": "Aice",
+    "ecer": "3000",
+    "modal": "104000",
+    "isi": "40",
+    "foto": "/product/aice/Asset 98.jpg"
+  },
+  {
+    "product": "Mochi Chocolate",
+    "brand": "Aice",
+    "ecer": "3000",
+    "modal": "104000",
+    "isi": "40",
+    "foto": "/product/aice/Asset 97.jpg"
+  },
+  {
+    "product": "Mochi Durian",
+    "brand": "Aice",
+    "ecer": "3000",
+    "modal": "104000",
+    "isi": "40",
+    "foto": "/product/aice/Asset 96.jpg"
+  },
+  {
+    "product": "Juju Apple",
+    "brand": "Aice",
+    "ecer": "3000",
+    "modal": "104000",
+    "isi": "40",
+    "foto": "/product/aice/Asset 95.jpg"
+  },
+  {
+    "product": "Taro Crispy",
+    "brand": "Aice",
+    "ecer": "3500",
+    "modal": "116000",
+    "isi": "40",
+    "foto": "/product/aice/Asset 94.jpg"
+  },
+  {
+    "product": "Strawbery Crispy",
+    "brand": "Aice",
+    "ecer": "3500",
+    "modal": "125000",
+    "isi": "40",
+    "foto": "/product/aice/Asset 93.jpg"
+  },
+  {
+    "product": "Chocolate Crispy",
+    "brand": "Aice",
+    "ecer": "5000",
+    "modal": "135000",
+    "isi": "30",
+    "foto": "/product/aice/Asset 92.jpg"
+  },
+  {
+    "product": "Sundae Chocolate",
+    "brand": "Aice",
+    "ecer": "5000",
+    "modal": "107000",
+    "isi": "24",
+    "foto": "/product/aice/Asset 91.jpg"
+  },
+  {
+    "product": "Sundae Strawberry",
+    "brand": "Aice",
+    "ecer": "5000",
+    "modal": "107000",
+    "isi": "24",
+    "foto": "/product/aice/Asset 90.jpg"
+  },
+  {
+    "product": "3in1 Colours",
+    "brand": "Aice",
+    "ecer": "10000",
+    "modal": "12/27",
+    "isi": "108000/243000",
+    "foto": "/product/aice/Asset 89.jpg"
+  },
+  {
+    "product": "Moong Beans",
+    "brand": "Aice",
+    "ecer": "4000",
+    "modal": "110000",
+    "isi": "30",
+    "foto": "/product/aice/Asset 88.jpg"
+  },
+  {
+    "product": "Sweet Corn",
+    "brand": "Aice",
+    "ecer": "3000",
+    "modal": "104000",
+    "isi": "40",
+    "foto": "/product/aice/Asset 87.jpg"
+  },
+  {
+    "product": "Mochi Vanilla",
+    "brand": "Aice",
+    "ecer": "3000",
+    "modal": "104000",
+    "isi": "40",
+    "foto": "/product/aice/Asset 86.jpg"
+  },
+  {
+    "product": "Mochi Peach",
+    "brand": "Aice",
+    "ecer": "3000",
+    "modal": "104000",
+    "isi": "40",
+    "foto": "/product/aice/Asset 85.jpg"
+  },
+  {
+    "product": "Mochi Banana",
+    "brand": "Aice",
+    "ecer": "3000",
+    "modal": "104000",
+    "isi": "40",
+    "foto": "/product/aice/Asset 84.jpg"
+  },
+  {
+    "product": "Crispy Ball(30)",
+    "brand": "Aice",
+    "ecer": "5000",
+    "modal": "135000",
+    "isi": "30",
+    "foto": "/product/aice/Asset 83.jpg"
+  },
+  {
+    "product": "Coffee Crispy(40)",
+    "brand": "Aice",
+    "ecer": "3500",
+    "modal": "125000",
+    "isi": "40",
+    "foto": "/product/aice/Asset 82.jpg"
   }
 ]
