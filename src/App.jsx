@@ -2,8 +2,10 @@ import { useState, useEffect } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
+
 import { gsap } from "gsap";
 import { ScrollSmoother } from "gsap/ScrollSmoother";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import Navbar from "./components/Navbar";
 import { NavLogo, FooterLogo } from "./components/Logo";
@@ -15,9 +17,10 @@ import campina from "./data/campina.json";
 import gracia from "./data/gracia.json";
 import korudo from "./data/korudo.json";
 
-gsap.registerPlugin(ScrollSmoother);
+gsap.registerPlugin(ScrollSmoother, ScrollTrigger);
 
 function App() {
+
   // useEffect(() => {
   //   ScrollSmoother.create({
   //     wrapper: "#smooth-wrapper",
@@ -31,7 +34,7 @@ function App() {
   const [stateProductNav, setStateProductNav] = useState("Semua");
 
   const product = [...aice, ...campina, ...gracia, ...korudo];
-
+  
   const [visible, setVisible] = useState(10);
   const handleAddVisible = () => {
     setVisible((prev) => prev + 20);
@@ -49,6 +52,10 @@ function App() {
     window.addEventListener("resize", checkMobile); // update saat resize
     return () => window.removeEventListener("resize", checkMobile); // cleanup
   }, []);
+
+  useEffect(() => {
+    
+  })
 
   return (
     <>
@@ -102,12 +109,12 @@ function App() {
             </div>
             <div className="product">
               {product
-                .slice(0, visible)
                 .filter(
                   (item) =>
                     stateProductNav === "Semua" ||
-                    item.brand === stateProductNav,
+                  item.brand === stateProductNav,
                 )
+                .slice(0, visible)
                 .map((item, idx) => (
                   <div className="productCard" key={idx}>
                     <img
