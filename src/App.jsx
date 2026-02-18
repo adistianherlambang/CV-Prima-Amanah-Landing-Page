@@ -53,9 +53,9 @@ function App() {
     return () => window.removeEventListener("resize", checkMobile); // cleanup
   }, []);
 
-  useEffect(() => {
-    
-  })
+  const [search, setSearch] = useState("")
+
+  const filtered = product.filter((item) => item.product.toLowerCase().includes((search || "").toLowerCase()))
 
   return (
     <>
@@ -92,7 +92,7 @@ function App() {
                       fill="#5996FD"
                     />
                   </svg>
-                  <p>Cari Produk</p>
+                  <input onChange={(e) => setSearch(e.target.value)} type="text" placeholder="Cari Produk" className="input" />
                 </div>
               </div>
               <div className="productNavContainer">
@@ -108,7 +108,7 @@ function App() {
               </div>
             </div>
             <div className="product">
-              {product
+              {filtered
                 .filter(
                   (item) =>
                     stateProductNav === "Semua" ||
