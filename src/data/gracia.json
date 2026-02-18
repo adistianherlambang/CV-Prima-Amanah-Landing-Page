@@ -1,10 +1,202 @@
 [
   {
-    "product": "Gracia 1",
+    "product": "Melon Sirsak",
     "brand": "Gracia",
-    "ecer": "2500",
-    "modal": "120000",
-    "isi": "60",
-    "foto": "asset.jpg"
+    "ecer": "2000",
+    "modal": "80000",
+    "isi": "50",
+    "foto": "/product/campina/Asset 127.jpg"
+  },
+  {
+    "product": "Bubble Gum",
+    "brand": "Gracia",
+    "ecer": "2000",
+    "modal": "80000",
+    "isi": "50",
+    "foto": "/product/campina/Asset 126.jpg"
+  },
+  {
+    "product": "Merah Putih",
+    "brand": "Gracia",
+    "ecer": "2000",
+    "modal": "80000",
+    "isi": "50",
+    "foto": "/product/campina/Asset 125.jpg"
+  },
+  {
+    "product": "Gracia Anggur",
+    "brand": "Gracia",
+    "ecer": "2000",
+    "modal": "80000",
+    "isi": "50",
+    "foto": "/product/campina/Asset 124.jpg"
+  },
+  {
+    "product": "Stick Manggo",
+    "brand": "Gracia",
+    "ecer": "2000",
+    "modal": "80000",
+    "isi": "50",
+    "foto": "/product/campina/Asset 123.jpg"
+  },
+  {
+    "product": "Gracia Semangka",
+    "brand": "Gracia",
+    "ecer": "2000",
+    "modal": "80000",
+    "isi": "50",
+    "foto": "/product/campina/Asset 122.jpg"
+  },
+  {
+    "product": "Gracia Durian",
+    "brand": "Gracia",
+    "ecer": "2000",
+    "modal": "80000",
+    "isi": "50",
+    "foto": "/product/campina/Asset 121.jpg"
+  },
+  {
+    "product": "Stick Taro",
+    "brand": "Gracia",
+    "ecer": "3000",
+    "modal": "118000",
+    "isi": "50",
+    "foto": "/product/campina/Asset 120.jpg"
+  },
+  {
+    "product": "Cappucino",
+    "brand": "Gracia",
+    "ecer": "3000",
+    "modal": "94000",
+    "isi": "40",
+    "foto": "/product/campina/Asset 119.jpg"
+  },
+  {
+    "product": "Stick Strawberry",
+    "brand": "Gracia",
+    "ecer": "3000",
+    "modal": "118000",
+    "isi": "50",
+    "foto": "/product/campina/Asset 118.jpg"
+  },
+  {
+    "product": "Stick Choco Blanc",
+    "brand": "Gracia",
+    "ecer": "3000",
+    "modal": "118000",
+    "isi": "50",
+    "foto": "/product/campina/Asset 117.jpg"
+  },
+  {
+    "product": "Vanilla Lapis Buah",
+    "brand": "Gracia",
+    "ecer": "3500",
+    "modal": "112000",
+    "isi": "40",
+    "foto": "/product/campina/Asset 116.jpg"
+  },
+  {
+    "product": "Rainbow Pinaple Straw",
+    "brand": "Gracia",
+    "ecer": "4000",
+    "modal": "128000",
+    "isi": "40",
+    "foto": "/product/campina/Asset 115.jpg"
+  },
+  {
+    "product": "Stick Kacang Hijau",
+    "brand": "Gracia",
+    "ecer": "4000",
+    "modal": "128000",
+    "isi": "40",
+    "foto": "/product/campina/Asset 114.jpg"
+  },
+  {
+    "product": "Stick Choco Mini",
+    "brand": "Gracia",
+    "ecer": "4000",
+    "modal": "128000",
+    "isi": "40",
+    "foto": "/product/campina/Asset 113.jpg"
+  },
+  {
+    "product": "Vanilla Lapis Kacang",
+    "brand": "Gracia",
+    "ecer": "5000",
+    "modal": "160000",
+    "isi": "40",
+    "foto": "/product/campina/Asset 112.jpg"
+  },
+  {
+    "product": "Strawberry Lapis Kacang",
+    "brand": "Gracia",
+    "ecer": "5000",
+    "modal": "160000",
+    "isi": "40",
+    "foto": "/product/campina/Asset 111.jpg"
+  },
+  {
+    "product": "Coklat Lapis Kacang",
+    "brand": "Gracia",
+    "ecer": "5000",
+    "modal": "160000",
+    "isi": "40",
+    "foto": "/product/campina/Asset 110.jpg"
+  },
+  {
+    "product": "Coffee Latte",
+    "brand": "Gracia",
+    "ecer": "5000",
+    "modal": "160000",
+    "isi": "40",
+    "foto": "/product/campina/Asset 109.jpg"
+  },
+  {
+    "product": "Cup Avocado",
+    "brand": "Gracia",
+    "ecer": "5000",
+    "modal": "96000",
+    "isi": "24",
+    "foto": "/product/campina/Asset 108.jpg"
+  },
+  {
+    "product": "Cup Durian",
+    "brand": "Gracia",
+    "ecer": "5000",
+    "modal": "96000",
+    "isi": "24",
+    "foto": "/product/campina/Asset 107.jpg"
+  },
+  {
+    "product": "Cup Coklat",
+    "brand": "Gracia",
+    "ecer": "5000",
+    "modal": "96000",
+    "isi": "24",
+    "foto": "/product/campina/Asset 106.jpg"
+  },
+  {
+    "product": "Cone Coklat",
+    "brand": "Gracia",
+    "ecer": "6000",
+    "modal": "115000",
+    "isi": "24",
+    "foto": "/product/campina/Asset 105.jpg"
+  },
+  {
+    "product": "Cone Strawberry",
+    "brand": "Gracia",
+    "ecer": "6000",
+    "modal": "115000",
+    "isi": "24",
+    "foto": "/product/campina/Asset 104.jpg"
+  },
+  {
+    "product": "Cone Vanilla",
+    "brand": "Gracia",
+    "ecer": "6000",
+    "modal": "115000",
+    "isi": "24",
+    "foto": "/product/campina/Asset 103.jpg"
   }
 ]
