@@ -126,7 +126,7 @@ export default function Navbar() {
           <a href="#about" className="navMobileItem" onClick={handleMenuItemClick}>
             Tentang Kami
           </a>
-          <a href="" className="navMobileItem navMobileContact" onClick={handleMenuItemClick}>
+          <a href="https://wa.me/6282184846969" target="_blank" className="navMobileItem navMobileContact">
             Hubungi Kami
           </a>
         </div>
@@ -134,7 +134,7 @@ export default function Navbar() {
 
       {/* Desktop Contact Button */}
       <div className="navContact">
-        <a href="" className="navContactLink">
+        <a  href="https://wa.me/6282184846969" target="_blank" className="navContactLink">
           Hubungi Kami
         </a>
       </div>
