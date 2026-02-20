@@ -96,7 +96,7 @@ function App() {
     <div id="smooth-container">
       <Navbar />
       <div className="container" id="smooth-wrapper">
-        <img src="/ice/1.webp" alt="" className="slowImg" id="img1"/>
+        <img src="/ice/1.webp" alt="" className="slowImg" id="img1" loading="lazy"/>
         <div id="beranda" className="banner">
           <p className="title">
             Distributor Produk
@@ -143,7 +143,7 @@ function App() {
                 ))}
               </div>
             </div>
-            <img src="/ice/2.webp" alt="" className="slowImg" id="img2" data-speed="0.5"/>
+            <img src="/ice/2.webp" alt="" className="slowImg" id="img2" loading="lazy" data-speed="0.5"/>
             <div className="product">
               {filtered
                 .filter(
@@ -194,7 +194,7 @@ function App() {
           )}
         </div>
         <div id="about" className="aboutContainer">
-          <img src="/ice/4.webp" alt="" className="slowImg" id="img3"/>
+          <img src="/ice/4.webp" alt="" className="slowImg" id="img3" loading="lazy"/>
           <p className="title">
             <span className="titleWrapper">
               Tentang <span className="blue">Kami</span>
