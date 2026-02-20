@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useLayoutEffect } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
@@ -20,15 +20,6 @@ import korudo from "./data/korudo.json";
 gsap.registerPlugin(ScrollSmoother, ScrollTrigger);
 
 function App() {
-
-  // useEffect(() => {
-  //   ScrollSmoother.create({
-  //     wrapper: "#smooth-wrapper",
-  //     content: "#smooth-content",
-  //     smooth: 1.2,
-  //     effects: true,
-  //   });
-  // }, []);
 
   const productNav = ["Semua", "Campina", "Aice", "Korudo", "Gracia"];
   const [stateProductNav, setStateProductNav] = useState("Semua");
@@ -57,10 +48,55 @@ function App() {
 
   const filtered = product.filter((item) => item.product.toLowerCase().includes((search || "").toLowerCase()))
 
+  function formatNumber(value) {
+    const number = Number(value);
+
+    if (isNaN(number)) return "0";
+
+    return number.toLocaleString("id-ID");
+  }
+
+  useLayoutEffect(() => {
+    const smoother = ScrollSmoother.create({
+      wrapper: "#smooth-container",
+      content: "#smooth-wrapper",
+      smooth: 2,
+      effects: true
+    });
+
+    gsap.to("#img1", {
+      x: isMobile ? -50 : -100,
+      y: isMobile ? 100 : 300,
+      ease: 0,
+      scrollTrigger: {
+        trigger: ".productCard",
+        start: "top 70%",
+        end: "+=300",
+        scrub: 1,
+      }
+    })
+
+    gsap.to("#img3", {
+      y: isMobile ? -100 : -300,
+      ease: 0,
+      scrollTrigger: {
+        trigger: ".aboutContainer",
+        start: "top 70%",
+        end: "+=300",
+        scrub: 1,
+      }
+    })
+
+    return () => {
+      smoother.kill();
+    };
+  }, [isMobile]);
+
   return (
-    <>
+    <div id="smooth-container">
       <Navbar />
-      <div className="container">
+      <div className="container" id="smooth-wrapper">
+        <img src="/ice/1.webp" alt="" className="slowImg" id="img1"/>
         <div id="beranda" className="banner">
           <p className="title">
             Distributor Produk
@@ -107,6 +143,7 @@ function App() {
                 ))}
               </div>
             </div>
+            <img src="/ice/2.webp" alt="" className="slowImg" id="img2" data-speed="0.5"/>
             <div className="product">
               {filtered
                 .filter(
@@ -126,21 +163,21 @@ function App() {
                     <div className="productTop">
                       <div>
                         <p className="productTitle">{item.product}</p>
-                        <p className="productSmall">{item.brand}</p>
+                        <p style={{fontSize: isMobile ? "12px" : "1rem"}} className="productSmall">{item.brand}</p>
                       </div>
                       <div>
                         <p className="productSmall">Isi/dus</p>
-                        <p>{item.isi}</p>
+                        <p style={{fontSize: isMobile ? "12px" : "1rem"}}>{item.isi}</p>
                       </div>
                     </div>
                     <div className="productBottom">
                       <div>
                         <p className="productSmall">Harga Ecer</p>
-                        <p>{item.ecer}</p>
+                        <p style={{fontSize: isMobile ? "12px" : "1rem"}}>{formatNumber(item.ecer)}</p>
                       </div>
                       <div>
                         <p className="productSmall">Harga Modal</p>
-                        <p>{item.modal}</p>
+                        <p style={{fontSize: isMobile ? "12px" : "1rem"}}>{formatNumber(item.modal)}</p>
                       </div>
                     </div>
                   </div>
@@ -157,6 +194,7 @@ function App() {
           )}
         </div>
         <div id="about" className="aboutContainer">
+          <img src="/ice/4.webp" alt="" className="slowImg" id="img3"/>
           <p className="title">
             <span className="titleWrapper">
               Tentang <span className="blue">Kami</span>
@@ -242,7 +280,7 @@ function App() {
           <div style={{display: "flex", justifyContent: "center", alignItems: "center", marginTop: "2rem"}}>{isMobile && <FooterLogo />}</div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
