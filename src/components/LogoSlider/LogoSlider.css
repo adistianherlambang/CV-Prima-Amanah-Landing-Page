@@ -9,3 +9,10 @@
   width: max-content;
 }
 
+.sliderContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  margin-left: 2rem;
+}
