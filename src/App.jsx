@@ -121,6 +121,7 @@ function App() {
                       className="productImg"
                       src={item.foto}
                       alt={item.product}
+                      loading="lazy"
                     />
                     <div className="productTop">
                       <div>
