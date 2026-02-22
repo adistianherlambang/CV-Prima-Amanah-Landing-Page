@@ -173,11 +173,11 @@ function App() {
                     <div className="productBottom">
                       <div>
                         <p className="productSmall">Harga Ecer</p>
-                        <p style={{fontSize: isMobile ? "12px" : "1rem"}}>{formatNumber(item.ecer)}</p>
+                        <p style={{fontSize: isMobile ? "12px" : "1rem", color: "#2aaae1"}}>{formatNumber(item.ecer)}</p>
                       </div>
                       <div>
                         <p className="productSmall">Harga Modal</p>
-                        <p style={{fontSize: isMobile ? "12px" : "1rem"}}>{formatNumber(item.modal)}</p>
+                        <p style={{fontSize: isMobile ? "12px" : "1rem", color: "#2aaae1"}}>{formatNumber(item.modal)}</p>
                       </div>
                     </div>
                   </div>
@@ -233,7 +233,7 @@ function App() {
             <div className="about" style={{ backgroundColor: "#5996FD" }}>
               <div className="aboutLeft">
                 <div className="aboutTitle">
-                  <p>Visi Perusahaan</p>
+                  <p>Misi Perusahaan</p>
                 </div>
                 <p className="aboutDesc" style={{ color: "white" }}>
                   Menjadi mitra pelanggan terpercaya dalam pengadaan produk dan
@@ -260,22 +260,38 @@ function App() {
             </div>
           </div>
           <div className="center">
-            <a href="#beranda" className="navItem">
+            <a style={{fontWeight: 700}} href="#beranda" className="navItem">
               Beranda
             </a>
-            <a href="#product" className="navItem">
+            <a style={{fontWeight: 700}} href="#product" className="navItem">
               Produk
             </a>
-            <a href="#about" className="navItem">
+            <a style={{fontWeight: 700}} href="#about" className="navItem">
               Tentang Kami
             </a>
           </div>
           <div className="right">
-            <p>Yosodadi, Kec. Metro Timur, Kota Metro, Lampung 34124</p>
-            <p>082184846969</p>
-            <p>
-              Senin sampai Jumat: 08.00–17.00 Sabtu: 08.00–14.00 Minggu: Tutup
-            </p>
+            <div style={{display: "flex", gap: "1rem"}}>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 11.45C11.2422 11.45 10.5155 11.1603 9.9797 10.6445C9.44388 10.1288 9.14286 9.42935 9.14286 8.7C9.14286 7.97065 9.44388 7.27118 9.9797 6.75546C10.5155 6.23973 11.2422 5.95 12 5.95C12.7578 5.95 13.4845 6.23973 14.0203 6.75546C14.5561 7.27118 14.8571 7.97065 14.8571 8.7C14.8571 9.06114 14.7832 9.41873 14.6397 9.75238C14.4961 10.086 14.2856 10.3892 14.0203 10.6445C13.755 10.8999 13.44 11.1025 13.0934 11.2407C12.7467 11.3789 12.3752 11.45 12 11.45ZM12 1C9.87827 1 7.84344 1.81125 6.34315 3.25528C4.84285 4.69931 4 6.65783 4 8.7C4 14.475 12 23 12 23C12 23 20 14.475 20 8.7C20 6.65783 19.1571 4.69931 17.6569 3.25528C16.1566 1.81125 14.1217 1 12 1Z" fill="white"/>
+              </svg>
+              <p>Yosodadi, Kec. Metro Timur, Kota Metro, Lampung 34124</p>
+            </div>
+            <div style={{display: "flex", gap: "1rem"}}>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.24583 2.10646C8.81928 1.9415 9.43465 1.9689 9.9895 2.18411C10.5444 2.39932 11.0052 2.78934 11.2954 3.28926L11.3923 3.47556L12.2599 5.31478C12.5227 5.87313 12.6078 6.4928 12.5049 7.09692C12.4019 7.70103 12.1153 8.26302 11.6806 8.71316L11.5063 8.8782L10.1395 10.0948C9.89313 10.3173 10.0779 11.1788 10.969 12.6517C11.7711 13.977 12.4237 14.5959 12.7448 14.6297H12.8011L12.8706 14.6172L15.5571 13.8332C15.9181 13.7276 16.3035 13.7234 16.6669 13.8212C17.0304 13.919 17.3567 14.1146 17.6067 14.3846L17.726 14.5284L19.5043 16.879C19.8528 17.3397 20.0265 17.9 19.9967 18.4675C19.9669 19.035 19.7355 19.5758 19.3405 20.0011L19.1806 20.1586L18.4703 20.8013C17.8325 21.3776 17.0346 21.767 16.1716 21.9233C15.3085 22.0795 14.4166 21.996 13.6018 21.6827C11.066 20.7075 8.76217 18.4794 6.66931 15.021C4.57252 11.5539 3.70104 8.53186 4.09025 5.94369C4.20803 5.16133 4.5457 4.424 5.0674 3.81001C5.58911 3.19603 6.27536 2.72832 7.05328 2.45655L7.30621 2.37653L8.24583 2.10646Z" fill="white"/>
+              </svg>
+              <p>082184846969</p>
+            </div>
+            <div style={{display: "flex", gap: "1rem"}}>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12 6V12L16 14" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <p>
+                Senin sampai Jumat: 08.00–17.00 Sabtu: 08.00–14.00 Minggu: Tutup
+              </p>
+            </div>
           </div>
           <div style={{display: "flex", justifyContent: "center", alignItems: "center", marginTop: "2rem"}}>{isMobile && <FooterLogo />}</div>
         </div>
