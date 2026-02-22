@@ -173,11 +173,11 @@ function App() {
                     <div className="productBottom">
                       <div>
                         <p className="productSmall">Harga Ecer</p>
-                        <p style={{fontSize: isMobile ? "12px" : "1rem", color: "#2aaae1"}}>{formatNumber(item.ecer)}</p>
+                        <p style={{fontSize: isMobile ? "12px" : "1rem"}}>{formatNumber(item.ecer)}</p>
                       </div>
                       <div>
                         <p className="productSmall">Harga Modal</p>
-                        <p style={{fontSize: isMobile ? "12px" : "1rem", color: "#2aaae1"}}>{formatNumber(item.modal)}</p>
+                        <p style={{fontSize: isMobile ? "12px" : "1rem"}}>{formatNumber(item.modal)}</p>
                       </div>
                     </div>
                   </div>
