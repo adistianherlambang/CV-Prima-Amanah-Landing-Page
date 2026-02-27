@@ -2,11 +2,6 @@
   background-color: white;
   z-index: 20;
   position: fixed;
-  top: 1rem;
-  left: 2rem;
-  right: 2rem;
-  padding: 1rem;
-  border-radius: 100rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -126,9 +121,9 @@
 /* Desktop ≥ 1024px */
 @media (min-width: 1024px) {
   .nav {
-    top: 1rem;
-    left: 2rem;
-    right: 2rem;
+    top: 0;
+    left: 0;
+    right: 0;
     padding: 1rem;
   }
 

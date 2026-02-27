@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useLayoutEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./Navbar.css";
@@ -25,6 +25,20 @@ export default function Navbar() {
   useEffect(() => {
     // Hanya jalankan GSAP jika bukan mobile
     if (isMobile) return;
+
+    gsap.to(".nav", {
+      top: "1rem",
+      left: "1rem",
+      right: "1rem",
+      border: "solid black 1px",
+      borderRadius: "100px",
+      scrollTrigger: {
+        trigger: ".nav",
+        start: "top+=300 10%",
+        end: "+=300",
+        scrub: true
+      }
+    })
 
     const nav = navRef.current;
     const bg = bgRef.current;
