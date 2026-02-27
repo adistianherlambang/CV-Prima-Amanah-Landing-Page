@@ -210,9 +210,9 @@ function App() {
               </svg>
             </span>
           </p>
-          <p className="desc">
+          <p className="desc" style={{}}>
             CV. Prima Amanah adalah perusahaan yang berdiri pada tanggal 05
-            februari 2020, cv prima amanah bergerak di bidang distribusi food
+            februari 2020, CV Prima Amanah bergerak di bidang distribusi food
             (produk ice cream & sembako) dan pemasaran CV. Prima Amanah telah
             mencakupp di wilayah Lamping Tengah, Lampung Timur, Metro, Bandar
             Lampung, Pesawaran, dan Kalianda
