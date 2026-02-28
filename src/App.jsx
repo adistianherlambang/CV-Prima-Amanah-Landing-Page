@@ -190,7 +190,15 @@ function App() {
                 )
                 .slice(0, visible)
                 .map((item, idx) => (
-                  <div className="productCard" key={idx}>
+                  <div onClick={() =>
+                    window.open(
+                      `https://wa.me/6282184846969?text=${encodeURIComponent(
+                        `Halo saya ingin pesan ${item.product} dari ${item.brand}`
+                      )}`,
+                      "_blank",
+                      "noopener,noreferrer"
+                    )
+                  } className="productCard" key={idx}>
                     <img
                       className="productImg"
                       src={item.foto}
