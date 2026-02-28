@@ -60,7 +60,7 @@ function App() {
     const smoother = ScrollSmoother.create({
       wrapper: "#smooth-container",
       content: "#smooth-wrapper",
-      smooth: 2,
+      smooth: 1,
       effects: true
     });
 
@@ -244,7 +244,7 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="footer">
+        {/* <div className="footer">
           <div className="left">
             {!isMobile && <FooterLogo />}
             <div className="desc">
@@ -294,7 +294,7 @@ function App() {
             </div>
           </div>
           <div style={{display: "flex", justifyContent: "center", alignItems: "center", marginTop: "2rem"}}>{isMobile && <FooterLogo />}</div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

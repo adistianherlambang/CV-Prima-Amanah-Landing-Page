@@ -4,7 +4,7 @@ import "./LogoSlider.css";
 
 export default function LogoSlider() {
   return(
-    <Marquee autoFill={true} pauseOnHover={true} speed={50}>
+    <Marquee autoFill={true} speed={50}>
       <div className="sliderContainer">
         <Korudo />
         <Campina />
