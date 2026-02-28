@@ -98,16 +98,20 @@ function App() {
       <div className="container" id="smooth-wrapper">
         <img src="/ice/1.webp" alt="" className="slowImg" id="img1" loading="lazy"/>
         <div id="beranda" className="banner">
-          <p className="title">
-            Distributor Produk
-            <br />
-            <span className="span">Es Krim</span> Berkualitas
-          </p>
-          <p className="desc">
-            Kami menyediakan dan mendistribusikan berbagai produk es krim
-            berkualitas tinggi dengan sistem distribusi yang andal, tepat waktu, dan menjangkau berbagai
-            sektor usaha.
-          </p>
+          <div className="content">
+            <p className="title">
+              Distributor Produk
+              <br />
+              <span className="span">Es Krim</span> Berkualitas
+            </p>
+            <p className="desc">
+              Kami menyediakan dan mendistribusikan es krim berkualitas <br/>dengan distribusi andal dan tepat waktu ke berbagai sektor usaha.
+            </p>
+          </div>
+          <div className="buttonWrap">
+            <a style={{color: "white", backgroundColor: "#5996FD"}} href="https://wa.me/6282184846969" target="_blank" className="button">Hubungi Kami</a>
+            <a style={{color: "black", border: "solid black 1px"}} href="#product" className="button">Telusuri Produk</a>
+          </div>
         </div>
         <div id="product" className="productContainer">
           <LogoSlider />

@@ -15,10 +15,29 @@
   background: linear-gradient(to bottom, #fed6f0, #ffffff);
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 2rem;
   line-height: 1;
   justify-content: center;
   align-items: center;
+}
+
+.banner .content {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  padding: 0.5rem 1rem;
+  border-radius: 100px;
+  text-decoration: none;
+}
+
+.banner .buttonWrap {
+  display: flex;
+  gap: 1rem;
 }
 
 .slowImg {
