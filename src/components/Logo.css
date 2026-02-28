@@ -14,7 +14,6 @@
   align-items: start;
 }
 
-
 @media (max-width: 767px) {
   .navLogo img {
     max-width: 8rem;

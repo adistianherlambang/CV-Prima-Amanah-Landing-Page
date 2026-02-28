@@ -20,12 +20,11 @@ import korudo from "./data/korudo.json";
 gsap.registerPlugin(ScrollSmoother, ScrollTrigger);
 
 function App() {
-
   const productNav = ["Semua", "Campina", "Aice", "Korudo", "Gracia"];
   const [stateProductNav, setStateProductNav] = useState("Semua");
 
   const product = [...aice, ...campina, ...gracia, ...korudo];
-  
+
   const [visible, setVisible] = useState(10);
   const handleAddVisible = () => {
     setVisible((prev) => prev + 20);
@@ -44,9 +43,11 @@ function App() {
     return () => window.removeEventListener("resize", checkMobile); // cleanup
   }, []);
 
-  const [search, setSearch] = useState("")
+  const [search, setSearch] = useState("");
 
-  const filtered = product.filter((item) => item.product.toLowerCase().includes((search || "").toLowerCase()))
+  const filtered = product.filter((item) =>
+    item.product.toLowerCase().includes((search || "").toLowerCase()),
+  );
 
   function formatNumber(value) {
     const number = Number(value);
@@ -61,7 +62,7 @@ function App() {
       wrapper: "#smooth-container",
       content: "#smooth-wrapper",
       smooth: 1,
-      effects: true
+      effects: true,
     });
 
     gsap.to("#img1", {
@@ -73,8 +74,8 @@ function App() {
         start: "top 70%",
         end: "+=300",
         scrub: 1,
-      }
-    })
+      },
+    });
 
     gsap.to("#img3", {
       y: isMobile ? -100 : -300,
@@ -84,8 +85,8 @@ function App() {
         start: "top 70%",
         end: "+=300",
         scrub: 1,
-      }
-    })
+      },
+    });
 
     return () => {
       smoother.kill();
@@ -96,7 +97,13 @@ function App() {
     <div id="smooth-container">
       <Navbar />
       <div className="container" id="smooth-wrapper">
-        <img src="/ice/1.webp" alt="" className="slowImg" id="img1" loading="lazy"/>
+        <img
+          src="/ice/1.webp"
+          alt=""
+          className="slowImg"
+          id="img1"
+          loading="lazy"
+        />
         <div id="beranda" className="banner">
           <div className="content">
             <p className="title">
@@ -105,12 +112,26 @@ function App() {
               <span className="span">Es Krim</span> Berkualitas
             </p>
             <p className="desc">
-              Kami menyediakan dan mendistribusikan es krim berkualitas <br/>dengan distribusi andal dan tepat waktu ke berbagai sektor usaha.
+              Kami menyediakan dan mendistribusikan es krim berkualitas <br />
+              dengan distribusi andal dan tepat waktu ke berbagai sektor usaha.
             </p>
           </div>
           <div className="buttonWrap">
-            <a style={{color: "white", backgroundColor: "#5996FD"}} href="https://wa.me/6282184846969" target="_blank" className="button">Hubungi Kami</a>
-            <a style={{color: "black", border: "solid black 1px"}} href="#product" className="button">Telusuri Produk</a>
+            <a
+              style={{ color: "white", backgroundColor: "#5996FD" }}
+              href="https://wa.me/6282184846969"
+              target="_blank"
+              className="button"
+            >
+              Hubungi Kami
+            </a>
+            <a
+              style={{ color: "black", border: "solid black 1px" }}
+              href="#product"
+              className="button"
+            >
+              Telusuri Produk
+            </a>
           </div>
         </div>
         <div id="product" className="productContainer">
@@ -132,7 +153,12 @@ function App() {
                       fill="#5996FD"
                     />
                   </svg>
-                  <input onChange={(e) => setSearch(e.target.value)} type="text" placeholder="Cari Produk" className="input" />
+                  <input
+                    onChange={(e) => setSearch(e.target.value)}
+                    type="text"
+                    placeholder="Cari Produk"
+                    className="input"
+                  />
                 </div>
               </div>
               <div className="productNavContainer">
@@ -147,13 +173,20 @@ function App() {
                 ))}
               </div>
             </div>
-            <img src="/ice/2.webp" alt="" className="slowImg" id="img2" loading="lazy" data-speed="0.5"/>
+            <img
+              src="/ice/2.webp"
+              alt=""
+              className="slowImg"
+              id="img2"
+              loading="lazy"
+              data-speed="0.5"
+            />
             <div className="product">
               {filtered
                 .filter(
                   (item) =>
                     stateProductNav === "Semua" ||
-                  item.brand === stateProductNav,
+                    item.brand === stateProductNav,
                 )
                 .slice(0, visible)
                 .map((item, idx) => (
@@ -167,21 +200,32 @@ function App() {
                     <div className="productTop">
                       <div>
                         <p className="productTitle">{item.product}</p>
-                        <p style={{fontSize: isMobile ? "12px" : "1rem"}} className="productSmall">{item.brand}</p>
+                        <p
+                          style={{ fontSize: isMobile ? "12px" : "1rem" }}
+                          className="productSmall"
+                        >
+                          {item.brand}
+                        </p>
                       </div>
                       <div>
                         <p className="productSmall">Isi/dus</p>
-                        <p style={{fontSize: isMobile ? "12px" : "1rem"}}>{item.isi}</p>
+                        <p style={{ fontSize: isMobile ? "12px" : "1rem" }}>
+                          {item.isi}
+                        </p>
                       </div>
                     </div>
                     <div className="productBottom">
                       <div>
                         <p className="productSmall">Harga Ecer</p>
-                        <p style={{fontSize: isMobile ? "12px" : "1rem"}}>{formatNumber(item.ecer)}</p>
+                        <p style={{ fontSize: isMobile ? "12px" : "1rem" }}>
+                          {formatNumber(item.ecer)}
+                        </p>
                       </div>
                       <div>
                         <p className="productSmall">Harga Modal</p>
-                        <p style={{fontSize: isMobile ? "12px" : "1rem"}}>{formatNumber(item.modal)}</p>
+                        <p style={{ fontSize: isMobile ? "12px" : "1rem" }}>
+                          {formatNumber(item.modal)}
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -190,15 +234,31 @@ function App() {
           </div>
           {product.length > visible && (
             <div onClick={handleAddVisible} className="buttonContainer">
-              <svg width="17" height="10" viewBox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M15.6823 0.730957L8.18231 7.73096L0.682312 0.730956" stroke="black" stroke-width="2"/>
+              <svg
+                width="17"
+                height="10"
+                viewBox="0 0 17 10"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15.6823 0.730957L8.18231 7.73096L0.682312 0.730956"
+                  stroke="black"
+                  stroke-width="2"
+                />
               </svg>
               <p>Lihat Lebih Banyak</p>
             </div>
           )}
         </div>
         <div id="about" className="aboutContainer">
-          <img src="/ice/4.webp" alt="" className="slowImg" id="img3" loading="lazy"/>
+          <img
+            src="/ice/4.webp"
+            alt=""
+            className="slowImg"
+            id="img3"
+            loading="lazy"
+          />
           <p className="title">
             <span className="titleWrapper">
               Tentang <span className="blue">Kami</span>

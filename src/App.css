@@ -131,7 +131,7 @@
 }
 
 .productNavContainer::-webkit-scrollbar {
-  display: none; 
+  display: none;
 }
 
 .productNav {
@@ -337,7 +337,7 @@
 } */
 
 .buttonContainer {
-  background-color: #F2F5FA;
+  background-color: #f2f5fa;
   padding: 0.5rem 1rem;
   border-radius: 100px;
   display: flex;

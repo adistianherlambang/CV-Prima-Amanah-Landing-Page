@@ -36,9 +36,9 @@ export default function Navbar() {
         trigger: ".nav",
         start: "top+=300 10%",
         end: "+=300",
-        scrub: true
-      }
-    })
+        scrub: true,
+      },
+    });
 
     const nav = navRef.current;
     const bg = bgRef.current;
@@ -102,7 +102,7 @@ export default function Navbar() {
   return (
     <nav className="nav">
       <NavLogo />
-      
+
       {/* Desktop Navigation */}
       <div className="navWrapper" ref={navRef}>
         <div className="navBg" ref={bgRef}></div>
@@ -118,7 +118,7 @@ export default function Navbar() {
       </div>
 
       {/* Mobile Hamburger Menu */}
-      <button 
+      <button
         className="navHamburger"
         onClick={() => setIsMenuOpen(!isMenuOpen)}
         aria-label="Toggle menu"
@@ -131,16 +131,32 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {isMenuOpen && (
         <div className="navMobileMenu">
-          <a href="#beranda" className="navMobileItem" onClick={handleMenuItemClick}>
+          <a
+            href="#beranda"
+            className="navMobileItem"
+            onClick={handleMenuItemClick}
+          >
             Beranda
           </a>
-          <a href="#product" className="navMobileItem" onClick={handleMenuItemClick}>
+          <a
+            href="#product"
+            className="navMobileItem"
+            onClick={handleMenuItemClick}
+          >
             Product
           </a>
-          <a href="#about" className="navMobileItem" onClick={handleMenuItemClick}>
+          <a
+            href="#about"
+            className="navMobileItem"
+            onClick={handleMenuItemClick}
+          >
             Tentang Kami
           </a>
-          <a href="https://wa.me/6282184846969" target="_blank" className="navMobileItem navMobileContact">
+          <a
+            href="https://wa.me/6282184846969"
+            target="_blank"
+            className="navMobileItem navMobileContact"
+          >
             Hubungi Kami
           </a>
         </div>
@@ -148,7 +164,11 @@ export default function Navbar() {
 
       {/* Desktop Contact Button */}
       <div className="navContact">
-        <a  href="https://wa.me/6282184846969" target="_blank" className="navContactLink">
+        <a
+          href="https://wa.me/6282184846969"
+          target="_blank"
+          className="navContactLink"
+        >
           Hubungi Kami
         </a>
       </div>
