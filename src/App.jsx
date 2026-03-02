@@ -316,6 +316,17 @@ function App() {
             </div>
           </div>
         </div>
+        <div style={{ width: "100%", height: "400px" }}>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.8161649183126!2d105.32095921510287!3d-5.112903635800261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e40bd2972e0b921%3A0xe204f0834670d036!2sCV.%20PRIMA%20AMANAH!5e0!3m2!1sid!2sid!4v1702978532872!5m2!1sid!2sid"
+            style={{ width: "100%", height: "100%", border: 0 }}
+            loading="lazy"
+            allowFullScreen
+          />
+        </div>
+        <div className="footer">
+          Adsadjashjdhj
+        </div>
         {/* <div className="footer">
           <div className="left">
             {!isMobile && <FooterLogo />}
