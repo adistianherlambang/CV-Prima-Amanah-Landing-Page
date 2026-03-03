@@ -12,6 +12,7 @@ import Navbar from "./components/Navbar";
 import { NavLogo, FooterLogo } from "./components/Logo";
 import LogoSlider from "./components/LogoSlider/LogoSlider";
 import ImageSlider from "./components/ImageSlider/ImageSlider";
+import Image from "./components/Image/Image";
 
 //product
 import aice from "./data/aice.json";
@@ -307,6 +308,7 @@ function App() {
             mencakupp di wilayah Lamping Tengah, Lampung Timur, Metro, Bandar
             Lampung, Pesawaran, dan Kalianda
           </p>
+          <Image/>
           <div className="aboutWrapper">
             <div className="about" style={{ backgroundColor: "#FED6F0" }}>
               <div className="aboutLeft">

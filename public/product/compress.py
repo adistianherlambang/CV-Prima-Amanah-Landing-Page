@@ -4,8 +4,8 @@ from PIL import Image
 # Path relatif dari lokasi file python
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-INPUT_FOLDER = os.path.join(BASE_DIR, "footer")
-OUTPUT_FOLDER = os.path.join(BASE_DIR, "output", "footer")
+INPUT_FOLDER = os.path.join(BASE_DIR, "image")
+OUTPUT_FOLDER = os.path.join(BASE_DIR, "output", "image")
 
 MAX_WIDTH = 1200
 QUALITY = 75
