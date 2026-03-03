@@ -1,11 +1,13 @@
 import { useState, useEffect, useRef, useLayoutEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollSmoother } from "gsap/ScrollSmoother";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import "./Navbar.css";
 
 import { NavLogo, FooterLogo } from "./Logo";
 
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger, ScrollToPlugin, ScrollSmoother);
 
 export default function Navbar() {
   const navRef = useRef(null);
@@ -73,6 +75,19 @@ export default function Navbar() {
       });
     }
 
+    const scrollToHash = (hash) => {
+      const target = document.querySelector(hash);
+      if (target) {
+        const smoother = ScrollSmoother.get();
+        if (smoother) {
+          smoother.scrollTo(target, { offsetY: 0, ease: "power2.inOut" });
+        } else {
+          // fallback
+          target.scrollIntoView({ behavior: "smooth" });
+        }
+      }
+    };
+
     items.forEach((item) => {
       const id = item.getAttribute("href");
 
@@ -84,8 +99,10 @@ export default function Navbar() {
         onEnterBack: () => moveBackground(item),
       });
 
-      item.addEventListener("click", () => {
+      item.addEventListener("click", (e) => {
+        e.preventDefault();
         moveBackground(item);
+        scrollToHash(id);
       });
     });
 
@@ -95,8 +112,26 @@ export default function Navbar() {
     }
   }, [isMobile]);
 
-  const handleMenuItemClick = () => {
+
+  const scrollToHash = (hash) => {
+    const target = document.querySelector(hash);
+    if (target) {
+      const smoother = ScrollSmoother.get();
+      if (smoother) {
+        smoother.scrollTo(target, { offsetY: 0, ease: "power2.inOut" });
+      } else {
+        target.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  };
+
+  const handleMenuItemClick = (e) => {
+    e.preventDefault();
     setIsMenuOpen(false);
+    const href = e.currentTarget.getAttribute("href");
+    if (href && href.startsWith("#")) {
+      scrollToHash(href);
+    }
   };
 
   return (
