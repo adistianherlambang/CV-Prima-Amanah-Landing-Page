@@ -11,6 +11,7 @@ import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import Navbar from "./components/Navbar";
 import { NavLogo, FooterLogo } from "./components/Logo";
 import LogoSlider from "./components/LogoSlider/LogoSlider";
+import ImageSlider from "./components/ImageSlider/ImageSlider";
 
 //product
 import aice from "./data/aice.json";
