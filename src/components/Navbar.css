@@ -193,9 +193,9 @@
 /* Mobile < 768px */
 @media (max-width: 767px) {
   .nav {
-    top: 0.5rem;
-    left: 1rem;
-    right: 1rem;
+    top: 0rem;
+    left: 0rem;
+    right: 0rem;
     padding: 0.6rem;
   }
 
