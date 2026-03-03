@@ -385,6 +385,11 @@ input::placeholder {
   background-color: #FED6F0;
 }
 
+#img5 {
+  bottom: 0;
+  left: 0;
+}
+
 /* Desktop ≥ 1024px */
 @media (min-width: 1024px) {
   .product {

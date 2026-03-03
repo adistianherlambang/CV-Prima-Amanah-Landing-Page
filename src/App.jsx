@@ -77,7 +77,7 @@ function App() {
         }
       }
     };
-    
+
     const anchors = document.querySelectorAll("#smooth-wrapper a[href^='#']");
     anchors.forEach((a) => a.addEventListener("click", clickHandler));
 
@@ -342,7 +342,13 @@ function App() {
           />
         </div>
         <div className="footer">
-
+          <img
+            src="/product/footer/footer.webp"
+            alt=""
+            className="slowImg"
+            id="img5"
+            loading="lazy"
+          />
           <div className="top">
             <div className="logo">
               <FooterLogo/>
