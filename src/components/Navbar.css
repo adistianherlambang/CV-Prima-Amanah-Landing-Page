@@ -88,6 +88,7 @@
   left: 0rem;
   right: 0rem;
   background-color: white;
+  border: 1px solid #000;
   flex-direction: column;
   gap: 0.5rem;
   padding: 1rem;
