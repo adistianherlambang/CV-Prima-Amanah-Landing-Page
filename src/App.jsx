@@ -234,12 +234,6 @@ function App() {
                           {item.brand}
                         </p>
                       </div>
-                      <div>
-                        <p className="productSmall">Isi/dus</p>
-                        <p style={{ fontSize: isMobile ? "12px" : "1rem" }}>
-                          {item.isi}
-                        </p>
-                      </div>
                     </div>
                     <div className="productBottom">
                       <div>
@@ -249,9 +243,9 @@ function App() {
                         </p>
                       </div>
                       <div>
-                        <p className="productSmall">Harga Modal</p>
+                        <p className="productSmall">Isi/dus</p>
                         <p style={{ fontSize: isMobile ? "12px" : "1rem" }}>
-                          {formatNumber(item.modal)}
+                          {item.isi}
                         </p>
                       </div>
                     </div>
