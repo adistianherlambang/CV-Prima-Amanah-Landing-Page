@@ -166,5 +166,77 @@
     "modal": "125000",
     "isi": "40",
     "foto": "/product/aice/Asset 82.webp"
+  },
+  {
+    "product": "3in1 8LT",
+    "brand": "Aice",
+    "ecer": "180000",
+    "modal": "x",
+    "isi": "1",
+    "foto": "/product/aice/new/3in1lt8.webp"
+  },
+  {
+    "product": "Vanilla 8LT",
+    "brand": "Aice",
+    "ecer": "180000",
+    "modal": "x",
+    "isi": "1",
+    "foto": "/product/aice/new/vanilla.webp"
+  },
+  {
+    "product": "Chocolate 8LT",
+    "brand": "Aice",
+    "ecer": "180000",
+    "modal": "x",
+    "isi": "1",
+    "foto": "/product/aice/new/chocolate.webp"
+  },
+  {
+    "product": "Strawberry 8LT",
+    "brand": "Aice",
+    "ecer": "180000",
+    "modal": "x",
+    "isi": "1",
+    "foto": "/product/aice/new/strawberry.webp"
+  },
+  {
+    "product": "Manggo 8LT",
+    "brand": "Aice",
+    "ecer": "195000",
+    "modal": "x",
+    "isi": "1",
+    "foto": "/product/aice/new/manggo.webp"
+  },
+  {
+    "product": "Taro 8LT",
+    "brand": "Aice",
+    "ecer": "195000",
+    "modal": "x",
+    "isi": "1",
+    "foto": "/product/aice/new/taro.webp"
+  },
+  {
+    "product": "Alpukat 8LT",
+    "brand": "Aice",
+    "ecer": "230000",
+    "modal": "x",
+    "isi": "1",
+    "foto": "/product/aice/new/alpukat.webp"
+  },
+  {
+    "product": "Durian 8LT",
+    "brand": "Aice",
+    "ecer": "230000",
+    "modal": "x",
+    "isi": "1",
+    "foto": "/product/aice/new/durian.webp"
+  },
+  {
+    "product": "3in1 5LT",
+    "brand": "Aice",
+    "ecer": "130000",
+    "modal": "x",
+    "isi": "1",
+    "foto": "/product/aice/new/3in1lt5.webp"
   }
 ]
