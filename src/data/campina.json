@@ -141,7 +141,7 @@
     "ecer": "12000",
     "modal": "18",
     "isi": "175000",
-    "foto": "/product/campina/Asset 61webp"
+    "foto": "/product/campina/Asset 61.webp"
   },
   {
     "product": "Spiderman",
@@ -230,6 +230,30 @@
     "modal": "154000",
     "isi": "22",
     "foto": "/product/campina/Asset 50.webp"
+  },
+  {
+    "product": "Heart",
+    "brand": "Campina",
+    "ecer": "6500",
+    "modal": "100000",
+    "isi": "18",
+    "foto": "/product/campina/Asset 49.webp"
+  },
+  {
+    "product": "Heart",
+    "brand": "Campina",
+    "ecer": "6500",
+    "modal": "100000",
+    "isi": "18",
+    "foto": "/product/campina/Asset 49.webp"
+  },
+  {
+    "product": "Heart",
+    "brand": "Campina",
+    "ecer": "6500",
+    "modal": "100000",
+    "isi": "18",
+    "foto": "/product/campina/Asset 49.webp"
   },
   {
     "product": "Heart",
