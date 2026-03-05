@@ -190,5 +190,37 @@
     "modal": "120000",
     "isi": "60",
     "foto": "/product/korudo/Asset 25.webp"
+  },
+  {
+    "product": "Dunkin Strawberry Vanilla",
+    "brand": "Korudo",
+    "ecer": "3000",
+    "modal": "x",
+    "isi": "10",
+    "foto": "/product/korudo/new/dstrawberry.webp"
+  },
+  {
+    "product": "Dunkin Chocolate Vanilla",
+    "brand": "Korudo",
+    "ecer": "3000",
+    "modal": "x",
+    "isi": "10",
+    "foto": "/product/korudo/new/dchocolate.webp"
+  },
+  {
+    "product": "3in1 8LT",
+    "brand": "Korudo",
+    "ecer": "165000",
+    "modal": "x",
+    "isi": "1",
+    "foto": "/product/korudo/new/3in1.webp"
+  },
+  {
+    "product": "Vanilla 8LT",
+    "brand": "Korudo",
+    "ecer": "165000",
+    "modal": "x",
+    "isi": "1",
+    "foto": "/product/korudo/new/8lt.webp"
   }
 ]
