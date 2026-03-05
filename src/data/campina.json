@@ -240,27 +240,43 @@
     "foto": "/product/campina/Asset 49.webp"
   },
   {
-    "product": "Heart",
+    "product": "Bon-Bon",
     "brand": "Campina",
-    "ecer": "6500",
-    "modal": "100000",
-    "isi": "18",
-    "foto": "/product/campina/Asset 49.webp"
+    "ecer": "12000",
+    "modal": "x",
+    "isi": "30",
+    "foto": "/product/campina/new/bonbon.webp"
   },
   {
-    "product": "Heart",
+    "product": "Rainbow Pops",
     "brand": "Campina",
-    "ecer": "6500",
-    "modal": "100000",
-    "isi": "18",
-    "foto": "/product/campina/Asset 49.webp"
+    "ecer": "5000",
+    "modal": "x",
+    "isi": "50",
+    "foto": "/product/campina/new/rainbow.webp"
   },
   {
-    "product": "Heart",
+    "product": "Korean Shine Muscat",
     "brand": "Campina",
-    "ecer": "6500",
-    "modal": "100000",
-    "isi": "18",
-    "foto": "/product/campina/Asset 49.webp"
+    "ecer": "5000",
+    "modal": "x",
+    "isi": "50",
+    "foto": "/product/campina/new/korean.webp"
+  },
+  {
+    "product": "Cookie Creamy",
+    "brand": "Campina",
+    "ecer": "5000",
+    "modal": "x",
+    "isi": "50",
+    "foto": "/product/campina/new/cookie.webp"
+  },
+  {
+    "product": "Seoul Lycee Yoghurt",
+    "brand": "Campina",
+    "ecer": "5000",
+    "modal": "x",
+    "isi": "36",
+    "foto": "/product/campina/new/seoul.webp"
   }
 ]
