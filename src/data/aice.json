@@ -106,9 +106,17 @@
   {
     "product": "3in1 Colours",
     "brand": "Aice",
-    "ecer": "10000",
+    "ecer": "243000",
     "modal": "12/27",
-    "isi": "108000/243000",
+    "isi": "27",
+    "foto": "/product/aice/Asset 89.webp"
+  },
+  {
+    "product": "3in1 Colours",
+    "brand": "Aice",
+    "ecer": "10800",
+    "modal": "",
+    "isi": "12",
     "foto": "/product/aice/Asset 89.webp"
   },
   {
